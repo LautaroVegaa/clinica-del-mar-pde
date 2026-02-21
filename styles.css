@@ -723,3 +723,119 @@ body {
     font-size: 1.25rem;
   }
 }
+/* =========================
+   Mobile polish (legibilidad + carrusel)
+   ========================= */
+
+/* Tipografía más legible en pantallas chicas */
+@media (max-width: 500px) {
+  body {
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
+
+  .hero__content h1 {
+    font-size: 1.65rem;
+    line-height: 1.15;
+  }
+
+  .hero__content p {
+    font-size: 1.05rem;
+  }
+
+  .servicios h2,
+  .opiniones h2,
+  .contacto-ubicacion__info h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+/* Carrusel opiniones: flechas bien colocadas y texto con buen ancho */
+@media (max-width: 600px) {
+  .opiniones {
+    padding: 2.2rem 1rem 2rem 1rem;
+  }
+
+  .opiniones-carousel {
+    position: relative;
+    max-width: 520px;
+    margin: 0 auto 2.2rem auto;
+  }
+
+  /* Dejá espacio para flechas dentro del carrusel */
+  .carousel-wrapper {
+    padding: 0 3.4rem;
+    min-height: 220px;
+  }
+
+  /* Una por vez, sin gap para que el desplazamiento sea perfecto */
+  .carousel-track {
+    gap: 0;
+  }
+
+  /* Centro y aire interno (sin cambiar tu estructura) */
+  .tarjeta-opinion {
+    padding: 0.25rem 0;
+  }
+
+  /* Texto más lindo y fácil de leer */
+  .opinion-card__texto {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0.6rem auto 1rem auto;
+    max-width: 30ch;
+  }
+
+  .opinion-card__autor {
+    font-size: 1.05rem;
+  }
+
+  .opinion-card__stars {
+    font-size: 1.35rem;
+    margin-bottom: 0.8rem;
+  }
+
+  /* Flechas: centradas verticalmente, a los costados, sin tapar el texto */
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.4rem;
+    z-index: 3;
+  }
+
+  .carousel-arrow--left {
+    left: 0.4rem;
+    margin-right: 0;
+  }
+
+  .carousel-arrow--right {
+    right: 0.4rem;
+    margin-left: 0;
+  }
+}
+
+/* Servicios: cards más “táctiles” en mobile */
+@media (max-width: 600px) {
+  .card__title {
+    font-size: 1.15rem;
+  }
+
+  .card__img {
+    height: 210px; /* un poco menos alta en mobile */
+  }
+}
+
+/* Contacto: un poco más compacto en mobile */
+@media (max-width: 500px) {
+  .contacto-ubicacion {
+    padding: 2.2rem 1rem 2rem 1rem;
+  }
+
+  .contacto-ubicacion__info p {
+    font-size: 1.02rem;
+  }
+}
