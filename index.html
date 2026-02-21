@@ -14,10 +14,18 @@
   <!-- Navbar -->
   <header class="navbar">
     <a class="navbar__logo" href="#">
-  <img src="images/logo-clinica-del-mar.png" alt="Clínica del Mar" class="navbar__logo-img">
-  <span>Clínica del Mar</span>
+      <img src="images/logo-clinica-del-mar.png" alt="Clínica del Mar" class="navbar__logo-img">
+      <span>Clínica del Mar</span>
     </a>
-    <nav class="navbar__nav">
+
+    <!-- Botón hamburguesa (solo se verá en móvil vía CSS) -->
+    <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navbar__nav" id="navMenu">
       <a href="#servicios">Servicios</a>
       <a href="#equipo">Equipo</a>
       <a href="#opiniones">Opiniones</a>
@@ -43,49 +51,49 @@
   <section class="servicios" id="servicios">
     <h2>Nuestros Servicios</h2>
     <div class="servicios__grid">
-  <div class="card" data-service="Odontología general">
-    <div class="card__img-container">
-      <img src="images/odontologia-general.png" alt="Odontología general" class="card__img">
-    </div>
-    <h3 class="card__title">Odontología general</h3>
-  </div>
+      <div class="card" data-service="Odontología general">
+        <div class="card__img-container">
+          <img src="images/odontologia-general.png" alt="Odontología general" class="card__img">
+        </div>
+        <h3 class="card__title">Odontología general</h3>
+      </div>
 
-  <div class="card" data-service="Odontopediatría">
-    <div class="card__img-container">
-      <img src="images/odontopediatria.png" alt="Odontopediatría" class="card__img">
-    </div>
-    <h3 class="card__title">Odontopediatría</h3>
-  </div>
+      <div class="card" data-service="Odontopediatría">
+        <div class="card__img-container">
+          <img src="images/odontopediatria.png" alt="Odontopediatría" class="card__img">
+        </div>
+        <h3 class="card__title">Odontopediatría</h3>
+      </div>
 
-  <div class="card" data-service="Estética corporal">
-    <div class="card__img-container">
-      <img src="images/estetica-corporal.jpeg" alt="Estética corporal" class="card__img">
-    </div>
-    <h3 class="card__title">Estética corporal</h3>
-  </div>
+      <div class="card" data-service="Estética corporal">
+        <div class="card__img-container">
+          <img src="images/estetica-corporal.jpeg" alt="Estética corporal" class="card__img">
+        </div>
+        <h3 class="card__title">Estética corporal</h3>
+      </div>
 
-  <div class="card" data-service="Estética facial">
-    <div class="card__img-container">
-      <img src="images/estetica-facial.png" alt="Estética facial" class="card__img">
-    </div>
-    <h3 class="card__title">Estética Facial</h3>
-  </div>
+      <div class="card" data-service="Estética facial">
+        <div class="card__img-container">
+          <img src="images/estetica-facial.png" alt="Estética facial" class="card__img">
+        </div>
+        <h3 class="card__title">Estética Facial</h3>
+      </div>
 
-  <!-- Nutrición: mantiene el número propio -->
-  <div class="card" data-service="Nutrición" data-whatsapp="5493512228641">
-    <div class="card__img-container">
-      <img src="images/nutricion.png" alt="Nutrición" class="card__img">
-    </div>
-    <h3 class="card__title">Nutrición <span class="card__subtitle">Licenciada Constanza Casabona</span></h3>
-  </div>
+      <!-- Nutrición: mantiene el número propio -->
+      <div class="card" data-service="Nutrición" data-whatsapp="5493512228641">
+        <div class="card__img-container">
+          <img src="images/nutricion.png" alt="Nutrición" class="card__img">
+        </div>
+        <h3 class="card__title">Nutrición <span class="card__subtitle">Licenciada Constanza Casabona</span></h3>
+      </div>
 
-  <div class="card" data-service="Depilación definitiva">
-    <div class="card__img-container">
-      <img src="images/depilacion-definitiva.png" alt="Depilación definitiva" class="card__img">
+      <div class="card" data-service="Depilación definitiva">
+        <div class="card__img-container">
+          <img src="images/depilacion-definitiva.png" alt="Depilación definitiva" class="card__img">
+        </div>
+        <h3 class="card__title">Depilación definitiva</h3>
+      </div>
     </div>
-    <h3 class="card__title">Depilación definitiva</h3>
-  </div>
-</div>
     <div class="servicios__banner">
       <strong>¿Eres profesional?</strong> <span>Info para alquiler de consultorios <a href="#alquiler">aquí</a>.</span>
     </div>
